@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   header {
@@ -32,7 +32,21 @@ const Wrapper = styled.div`
     display: inline-block;
     margin-right: 0.5rem;
   }
-  @media (min-width: 992px) {
+  .img-container {
+    width: 90%;
+    /* max-width: 40rem; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .ing-img {
+    width: 12rem;
+  }
+
+  /* @media (min-width: 992px) {
     .drink {
       display: grid;
       grid-template-columns: 2fr 3fr;
@@ -42,7 +56,7 @@ const Wrapper = styled.div`
     .drink-info {
       padding-top: 0;
     }
-  }
+  } */
 `;
 
 export default Wrapper;
