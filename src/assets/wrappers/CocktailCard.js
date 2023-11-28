@@ -1,32 +1,42 @@
-import styled from 'styled-components';
-const Wrapper = styled.article`
-  background: var(--white);
+import styled from "styled-components";
+const Wrapper = styled.div`
+  background: #2e0015;
   box-shadow: var(--shadow-2);
   transition: var(--transition);
-  display: grid;
-  grid-template-rows: auto 1fr;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
   border-radius: var(--borderRadius);
+  cursor: pointer;
   :hover {
     box-shadow: var(--shadow-4);
   }
+
   img {
-    height: 15rem;
+    width: 15rem;
+    height: 16rem;
     border-top-left-radius: var(--borderRadius);
     border-top-right-radius: var(--borderRadius);
   }
+
   .footer {
     padding: 1.5rem;
-    h4,
-    h5 {
-      margin-bottom: 0.5rem;
-    }
-    h4 {
-      font-weight: 700;
-    }
-    p {
-      margin-bottom: 1rem;
-      color: var(--grey-500);
-    }
+    text-align: center;
+    color: #fff;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  .footer:hover {
+    /* box-shadow: var(--shadow-4); */
+    color: #e84d00;
   }
 `;
 
